@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+
+</head>
+<body>
+<div  ng-app="myApp" ng-controller="namesCtrl">
+    <h3>List of Brics coutries and their capitals.</h3>
+    <ol>
+        <li ng-repeat="x in names">
+            {{ x.country + ', ' + x.capital}}
+        </li>
+    </ol>
+</div>
+<script src="js/namesController.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+<div>
+    <p>Hello!</p>
+    <p>Welcome to {{course}}</p>
+<!--    view là ' Hello! -Welcome to '-->
+</div>
+<script>
+     var app = angular.module('myApp', []); <!-- model -->
+     app.controller('myController', function($scope){ <!-- controller -->
+         $scope.course ="AngularJS";
+     });
+</script>
+</body>
+</html>
